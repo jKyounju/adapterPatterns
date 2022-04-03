@@ -1,6 +1,6 @@
 package abstractFactoryPattern.factory;
 
-import abstractFactoryPattern.product.*;
+import product.*;
 
 public abstract class SingleTonFactory {
 
@@ -19,18 +19,18 @@ public abstract class SingleTonFactory {
         return factory4;
     }
 
-    public abstract ProductA createProductA();
-    public abstract ProductB createProductB();
+    public abstract Product createProductA();
+    public abstract Product createProductB();
 
     private static class Factory3 extends SingleTonFactory {
         @Override
-        public ProductA createProductA() {
+        public Product createProductA() {
             System.out.println("creating ProductA1");
             return new ProductA1();
         }
 
         @Override
-        public ProductB createProductB() {
+        public Product createProductB() {
             System.out.println("creating ProductB1");
             return new ProductB1();
         }
@@ -38,13 +38,13 @@ public abstract class SingleTonFactory {
 
     private static class Factory4 extends SingleTonFactory {
         @Override
-        public ProductA createProductA() {
+        public Product createProductA() {
             System.out.println("creating ProductA2");
             return new ProductA2();
         }
 
         @Override
-        public ProductB createProductB() {
+        public Product createProductB() {
             System.out.println("creating ProductA1");
             return new ProductB2();
         }

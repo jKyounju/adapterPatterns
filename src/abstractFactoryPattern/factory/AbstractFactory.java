@@ -1,10 +1,9 @@
 package abstractFactoryPattern.factory;
 
-import abstractFactoryPattern.product.ProductA;
-import abstractFactoryPattern.product.ProductB;
+import product.Product;
 
 public interface AbstractFactory {
 
-    public ProductA createProductA();
-    public ProductB createProductB();
+    public Product createProductA();
+    public Product createProductB();
 }

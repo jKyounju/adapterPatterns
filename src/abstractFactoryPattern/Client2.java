@@ -1,13 +1,11 @@
 package abstractFactoryPattern;
 
-import abstractFactoryPattern.factory.AbstractFactory;
 import abstractFactoryPattern.factory.SingleTonFactory;
-import abstractFactoryPattern.product.ProductA;
-import abstractFactoryPattern.product.ProductB;
+import product.Product;
 
 public class Client2 {
-    private ProductA productA;
-    private ProductB productB;
+    private Product productA;
+    private Product productB;
     private SingleTonFactory factory;
 
     public Client2(SingleTonFactory factory) {

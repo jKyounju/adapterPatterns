@@ -1,5 +1,6 @@
 package abstractFactoryPattern;
 
+import BuilderPattern.*;
 import abstractFactoryPattern.factory.AbstractFactory;
 import abstractFactoryPattern.factory.FactoryMock;
 import abstractFactoryPattern.factory.SingleTonFactory;
@@ -26,5 +27,15 @@ class DesignPatternTest {
                 "Hello AbstractFactoryPattern.product.ProductA1 and AbstractFactoryPattern.product.ProductB1!");
         assertEquals(client2.operation(),
                 "Hello AbstractFactoryPattern.product.ProductA2 and AbstractFactoryPattern.product.ProductB2!");
+    }
+
+    @Test
+    public void BuilderPatternTest() {
+        Director director1 = new Director(new Builder1());
+        Director2 director2 = new Director2.builder().complexObject(new ComplexObject()).build();
+        System.out.println(director1.construct());
+
+        assertEquals(director1.construct(), director2.construct());
+
     }
 }

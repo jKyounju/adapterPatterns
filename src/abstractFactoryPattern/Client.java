@@ -1,12 +1,11 @@
 package abstractFactoryPattern;
 
 import abstractFactoryPattern.factory.AbstractFactory;
-import abstractFactoryPattern.product.ProductA;
-import abstractFactoryPattern.product.ProductB;
+import product.Product;
 
 public class Client {
-    private ProductA productA;
-    private ProductB productB;
+    private Product productA;
+    private Product productB;
     private AbstractFactory factory;
 
     public Client(AbstractFactory factory) {

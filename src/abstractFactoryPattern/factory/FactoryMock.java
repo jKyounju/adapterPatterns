@@ -1,17 +1,17 @@
 package abstractFactoryPattern.factory;
 
-import abstractFactoryPattern.product.*;
+import product.*;
 
 public class FactoryMock implements AbstractFactory {
 
 
     @Override
-    public ProductA createProductA() {
+    public Product createProductA() {
         return new ProductAMock();
     }
 
     @Override
-    public ProductB createProductB() {
+    public Product createProductB() {
         return new ProductBMock();
     }
 }

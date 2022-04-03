@@ -1,6 +1,6 @@
-package abstractFactoryPattern.product;
+package product;
 
-public class ProductB1 implements ProductB {
+public class ProductB1 implements Product {
     @Override
     public String getName() {
         return "AbstractFactoryPattern.product.ProductB1";
