@@ -1,9 +1,8 @@
-package abstractFactoryPattern;
+package DesignPatternTest;
 
 import BuilderPattern.*;
-import abstractFactoryPattern.factory.AbstractFactory;
-import abstractFactoryPattern.factory.FactoryMock;
-import abstractFactoryPattern.factory.SingleTonFactory;
+import DesignPatternTest.factory.FactoryMock;
+import DesignPatternTest.factory.SingleTonFactory;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
