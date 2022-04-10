@@ -1,4 +1,4 @@
-package DesignPatternTest.factory;
+package AbstarctFactoryPattern.factory;
 
 import product.Product;
 

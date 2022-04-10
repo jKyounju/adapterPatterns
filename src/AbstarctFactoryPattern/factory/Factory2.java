@@ -1,4 +1,4 @@
-package DesignPatternTest.factory;
+package AbstarctFactoryPattern.factory;
 
 import product.ProductA2;
 import product.Product;
@@ -11,13 +11,13 @@ public class Factory2 implements AbstractFactory {
 
     @Override
     public Product createProductA() {
-        System.out.println("AbstractFactoryPattern.factory.Factory2 : Creating a AbstractFactoryPattern.product.ProductA2 Object");
+        System.out.println("Factory2 : Creating a ProductA2 Object");
         return new ProductA2();
     }
 
     @Override
     public Product createProductB() {
-        System.out.println("AbstractFactoryPattern.factory.Factory2 : Creating a AbstractFactoryPattern.product.ProductB2 Object");
+        System.out.println("Factory2 : Creating a ProductB2 Object");
         return new ProductB2();
     }
 }

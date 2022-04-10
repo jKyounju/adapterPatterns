@@ -1,10 +1,15 @@
-package DesignPatternTest;
+package AbstarctFactoryPattern;
 
 import BuilderPattern.*;
-import DesignPatternTest.factory.FactoryMock;
-import DesignPatternTest.factory.SingleTonFactory;
+import AbstarctFactoryPattern.factory.FactoryMock;
+import AbstarctFactoryPattern.factory.SingleTonFactory;
+import FactoryMethodPattern.Creator;
+import FactoryMethodPattern.AbstractFM.Creator1;
+import FactoryMethodPattern.StaticFM.Creator2;
 import org.junit.jupiter.api.Test;
+import product.Product;
 
+import static FactoryMethodPattern.StaticFM.Creator2.factoryMethod;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DesignPatternTest {
@@ -36,5 +41,20 @@ class DesignPatternTest {
 
         assertEquals(director1.construct(), director2.construct());
 
+    }
+
+    @Test
+    public void AbstractFactoryMethod() {
+        Creator creator = new Creator1();
+        var name = creator.factoryMethod().getName();
+
+        assertEquals("Product1", name);
+    }
+
+    @Test
+    public void StaticFactoryMethod() {
+        Product product = factoryMethod();
+
+        assertEquals("Product2", product.getName());
     }
 }

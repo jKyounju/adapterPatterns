@@ -1,6 +1,6 @@
-package DesignPatternTest;
+package AbstarctFactoryPattern;
 
-import DesignPatternTest.factory.SingleTonFactory;
+import AbstarctFactoryPattern.factory.SingleTonFactory;
 import product.Product;
 
 public class Client2 {

@@ -1,6 +1,6 @@
-package DesignPatternTest;
+package AbstarctFactoryPattern;
 
-import DesignPatternTest.factory.AbstractFactory;
+import AbstarctFactoryPattern.factory.AbstractFactory;
 import product.Product;
 
 public class Client {
@@ -13,7 +13,7 @@ public class Client {
     }
 
     public String operation() {
-        System.out.println("AbstractFactoryPattern.Client : Delegating creating objects to a factory object.");
+        System.out.println("Client : Delegating creating objects to a factory object.");
         productA = factory.createProductA();
         productB = factory.createProductB();
         return "Hello " + productA.getName() +  " and " + productB.getName() + "!";
