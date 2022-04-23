@@ -5,7 +5,7 @@ import AbstarctFactoryPattern.factory.FactoryMock;
 import AbstarctFactoryPattern.factory.SingleTonFactory;
 import FactoryMethodPattern.Creator;
 import FactoryMethodPattern.AbstractFM.Creator1;
-import FactoryMethodPattern.StaticFM.Creator2;
+import PrototypePattern.Product1;
 import org.junit.jupiter.api.Test;
 import product.Product;
 
@@ -56,5 +56,17 @@ class DesignPatternTest {
         Product product = factoryMethod();
 
         assertEquals("Product2", product.getName());
+    }
+
+    @Test
+    public void PrototypePattern() {
+        PrototypePattern.Client client = new PrototypePattern.Client(new Product1("Product1"));
+        System.out.println(client.operation());
+
+        Product p1 = client.clone();
+        Product p2 = client.clone();
+
+        assertEquals("false", String.valueOf(p1.equals(p2)));
+
     }
 }
