@@ -9,6 +9,8 @@ import AbstarctFactoryPattern.factory.SingleTonFactory;
 import FactoryMethodPattern.Creator;
 import FactoryMethodPattern.AbstractFM.Creator1;
 import PrototypePattern.Product1;
+import ProxyPattern.Proxy;
+import ProxyPattern.RealSubject;
 import org.junit.jupiter.api.Test;
 import product.Product;
 
@@ -76,5 +78,11 @@ class DesignPatternTest {
     public void BridgePattern() {
         Abstraction abstraction = new Abstraction1(new Implementor1());
         System.out.println(abstraction.operation());
+    }
+
+    @Test
+    public void ProxyPattern() {
+        Proxy proxy = new Proxy(new RealSubject());
+        System.out.println(proxy.operation());
     }
 }
