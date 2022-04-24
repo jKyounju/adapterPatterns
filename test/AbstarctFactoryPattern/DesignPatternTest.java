@@ -1,5 +1,8 @@
 package AbstarctFactoryPattern;
 
+import BridgePattern.Abstraction;
+import BridgePattern.Abstraction1;
+import BridgePattern.Implementor1;
 import BuilderPattern.*;
 import AbstarctFactoryPattern.factory.FactoryMock;
 import AbstarctFactoryPattern.factory.SingleTonFactory;
@@ -67,6 +70,11 @@ class DesignPatternTest {
         Product p2 = client.clone();
 
         assertEquals("false", String.valueOf(p1.equals(p2)));
+    }
 
+    @Test
+    public void BridgePattern() {
+        Abstraction abstraction = new Abstraction1(new Implementor1());
+        System.out.println(abstraction.operation());
     }
 }
