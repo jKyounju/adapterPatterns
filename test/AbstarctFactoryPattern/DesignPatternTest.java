@@ -6,6 +6,10 @@ import BridgePattern.Implementor1;
 import BuilderPattern.*;
 import AbstarctFactoryPattern.factory.FactoryMock;
 import AbstarctFactoryPattern.factory.SingleTonFactory;
+import CompositePattern.BOM.*;
+import CompositePattern.Basic.Component;
+import CompositePattern.Basic.Composite;
+import CompositePattern.Basic.Leaf;
 import FactoryMethodPattern.Creator;
 import FactoryMethodPattern.AbstractFM.Creator1;
 import PrototypePattern.Product1;
@@ -84,5 +88,36 @@ class DesignPatternTest {
     public void ProxyPattern() {
         Proxy proxy = new Proxy(new RealSubject());
         System.out.println(proxy.operation());
+    }
+
+    @Test
+    public void CompositePattern() {
+        Component composite2 = new Composite("composite2 ");
+        composite2.add(new Leaf("Leaf1 "));
+        composite2.add(new Leaf("Leaf2 "));
+        composite2.add(new Leaf("Leaf3 "));
+
+        Component composite1 = new Composite("composite1 ");
+        composite1.add(new Leaf("Leaf4 "));
+        composite1.add(composite2);
+        composite1.add(new Leaf("Leaf5 "));
+
+        System.out.println("(1) " + composite1.operation());
+        System.out.println("(2) " + composite2.operation());
+
+    }
+
+    @Test
+    public void CompositePattern2() {
+        Component2 mainboard = new MainBoard("MainBoard", 100);
+        mainboard.add(new Processor("Processor", 100));
+        mainboard.add(new Memory("Memory", 100));
+        Component2 chassis = new Chassis("Chassis  ", 100);
+        chassis.add(mainboard);
+        chassis.add(new Disk("Disk        ", 100));
+
+        System.out.println(chassis.getName() + " total price " + chassis.getPrice());
+        System.out.println(mainboard.getName() + " total price " + mainboard.getPrice());
+
     }
 }
