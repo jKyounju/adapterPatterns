@@ -2,9 +2,9 @@ package StructurePattern.AdapterPattern;
 
 public class Adapter implements CtypePort {
 
-    private Iphone smartPhone;
+    private EightpinPort smartPhone;
 
-    public Adapter(Iphone smartPhone) {
+    public Adapter(EightpinPort smartPhone) {
         this.smartPhone = smartPhone;
     }
 
