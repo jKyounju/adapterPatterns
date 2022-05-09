@@ -1,4 +1,4 @@
-package CreatationalPattern.ProxyPattern;
+package StructurePattern.ProxyPattern;
 
 public class RealSubject extends Subject{
     @Override

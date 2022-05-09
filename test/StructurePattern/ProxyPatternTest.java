@@ -1,7 +1,7 @@
 package StructurePattern;
 
-import CreatationalPattern.ProxyPattern.Proxy;
-import CreatationalPattern.ProxyPattern.RealSubject;
+import StructurePattern.ProxyPattern.Proxy;
+import StructurePattern.ProxyPattern.RealSubject;
 import org.junit.jupiter.api.Test;
 
 class ProxyPatternTest {

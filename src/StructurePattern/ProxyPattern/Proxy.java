@@ -1,4 +1,4 @@
-package CreatationalPattern.ProxyPattern;
+package StructurePattern.ProxyPattern;
 
 public class Proxy extends Subject{
 
