@@ -43,5 +43,4 @@ public class Aggregate1<E> implements Aggregate<E> {
             return cursor < size;
         }
     }
-
 }
