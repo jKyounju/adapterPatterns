@@ -55,7 +55,7 @@ public class StrategyPatternTest {
                 "SORTING CUSTOMERS:\n\n" +
                         "(1) by using the default comparator \n" +
                         " = according to the customer ID: ");
-        Collections.sort(customerList);
+//        Collections.sort(customerList);
         System.out.println(customerList);
         System.out.println("\n" +
                 "(2) by specifying the NAME comparator \n" +
