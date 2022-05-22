@@ -22,7 +22,11 @@ public abstract class Motor {
         MotorStatus status = getMotorStatus();
         if(status == MotorStatus.MOVING) return;
         if(door.getDoorStatus() == DoorStatus.OPENED) door.closed();
+
+        // 변하는 코드
         moveMotor(direction);
+
+
         setMotorStatus(MotorStatus.MOVING);
     }
 }
