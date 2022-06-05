@@ -1,4 +1,4 @@
-package BehavioralPattern.Observer.Gui;
+package BehavioralPattern.ObserverPattern.Gui;
 
 import javax.swing.*;
 import java.awt.*;

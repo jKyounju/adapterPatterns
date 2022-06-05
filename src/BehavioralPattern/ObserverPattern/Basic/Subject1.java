@@ -1,6 +1,6 @@
-package BehavioralPattern.Observer.Basic;
+package BehavioralPattern.ObserverPattern.Basic;
 
-import BehavioralPattern.Observer.util.Subject;
+import BehavioralPattern.ObserverPattern.util.Subject;
 
 public class Subject1 extends Subject {
     private int state;

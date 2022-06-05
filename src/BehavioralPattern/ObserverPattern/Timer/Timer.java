@@ -1,10 +1,6 @@
-package BehavioralPattern.Observer.Timer;
+package BehavioralPattern.ObserverPattern.Timer;
 
-import BehavioralPattern.Observer.util.Observer;
-import BehavioralPattern.Observer.util.Subject;
-
-import java.util.ArrayList;
-import java.util.List;
+import BehavioralPattern.ObserverPattern.util.Subject;
 
 public class Timer extends Subject {
     private int hour;

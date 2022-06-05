@@ -1,15 +1,15 @@
 package BehavioralPattern;
 
-import BehavioralPattern.Observer.Basic.Observer1;
-import BehavioralPattern.Observer.Basic.Observer2;
-import BehavioralPattern.Observer.Basic.Subject1;
-import BehavioralPattern.Observer.Timer.Clock;
-import BehavioralPattern.Observer.Timer.Timer;
+import BehavioralPattern.ObserverPattern.Basic.Observer1;
+import BehavioralPattern.ObserverPattern.Basic.Observer2;
+import BehavioralPattern.ObserverPattern.Basic.Subject1;
+import BehavioralPattern.ObserverPattern.Timer.Clock;
+import BehavioralPattern.ObserverPattern.Timer.Timer;
 import org.junit.jupiter.api.Test;
 
 import java.util.Calendar;
 
-import static BehavioralPattern.Observer.Gui.GUIDemo1.createAndShowGUI;
+import static BehavioralPattern.ObserverPattern.Gui.GUIDemo1.createAndShowGUI;
 
 public class ObserverPatternTest {
 

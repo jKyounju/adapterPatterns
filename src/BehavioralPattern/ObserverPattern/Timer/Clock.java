@@ -1,7 +1,7 @@
-package BehavioralPattern.Observer.Timer;
+package BehavioralPattern.ObserverPattern.Timer;
 
-import BehavioralPattern.Observer.util.Observer;
-import BehavioralPattern.Observer.util.Subject;
+import BehavioralPattern.ObserverPattern.util.Observer;
+import BehavioralPattern.ObserverPattern.util.Subject;
 
 public class Clock extends Observer {
     private int hour;

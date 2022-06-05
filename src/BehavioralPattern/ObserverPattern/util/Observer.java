@@ -1,4 +1,4 @@
-package BehavioralPattern.Observer.util;
+package BehavioralPattern.ObserverPattern.util;
 
 public abstract class Observer {
     public abstract void update(Subject s);
