@@ -1,4 +1,4 @@
-package product;
+package CreatationalPattern.product;
 
 public class ProductB2 implements Product{
     @Override

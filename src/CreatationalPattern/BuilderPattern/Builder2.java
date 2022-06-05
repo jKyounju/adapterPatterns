@@ -1,7 +1,7 @@
 package CreatationalPattern.BuilderPattern;
 
-import product.ProductA2;
-import product.ProductB2;
+import CreatationalPattern.product.ProductA2;
+import CreatationalPattern.product.ProductB2;
 
 public class Builder2 implements Builder {
 

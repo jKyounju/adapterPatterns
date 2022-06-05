@@ -1,7 +1,7 @@
 package CreatationalPattern.FactoryMethodPattern.StaticFM;
 
-import product.Product;
-import product.Product2;
+import CreatationalPattern.product.Product;
+import CreatationalPattern.product.Product2;
 
 public class Creator2 extends Creator1 {
     public static Product factoryMethod() {

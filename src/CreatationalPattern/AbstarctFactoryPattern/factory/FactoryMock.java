@@ -1,9 +1,10 @@
 package CreatationalPattern.AbstarctFactoryPattern.factory;
 
-import product.*;
+import CreatationalPattern.product.Product;
+import CreatationalPattern.product.ProductAMock;
+import CreatationalPattern.product.ProductBMock;
 
 public class FactoryMock implements AbstractFactory {
-
 
     @Override
     public Product createProductA() {

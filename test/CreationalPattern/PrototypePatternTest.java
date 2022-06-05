@@ -2,7 +2,7 @@ package CreationalPattern;
 
 import CreatationalPattern.PrototypePattern.Product1;
 import org.junit.jupiter.api.Test;
-import product.Product;
+import CreatationalPattern.product.Product;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

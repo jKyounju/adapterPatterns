@@ -1,5 +1,5 @@
 package CreatationalPattern.BuilderPattern;
-import product.Product;
+import CreatationalPattern.product.Product;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

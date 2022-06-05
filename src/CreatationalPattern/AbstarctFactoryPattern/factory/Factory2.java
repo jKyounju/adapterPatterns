@@ -1,13 +1,12 @@
 package CreatationalPattern.AbstarctFactoryPattern.factory;
 
-import product.ProductA2;
-import product.Product;
-import product.ProductB2;
+import CreatationalPattern.product.ProductA2;
+import CreatationalPattern.product.Product;
+import CreatationalPattern.product.ProductB2;
+
+import java.util.Objects;
 
 public class Factory2 implements AbstractFactory {
-
-    private Product productA;
-    private Product productB;
 
     @Override
     public Product createProductA() {

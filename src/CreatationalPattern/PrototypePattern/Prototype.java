@@ -1,6 +1,6 @@
 package CreatationalPattern.PrototypePattern;
 
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public interface Prototype {
     Product clone();

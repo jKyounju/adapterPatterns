@@ -1,7 +1,7 @@
 package CreatationalPattern.AbstarctFactoryPattern;
 
 import CreatationalPattern.AbstarctFactoryPattern.factory.AbstractFactory;
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public class Client {
     private Product productA;

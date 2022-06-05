@@ -1,6 +1,6 @@
 package CreatationalPattern.PrototypePattern;
 
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public class Client {
 

@@ -1,6 +1,6 @@
 package CreatationalPattern.FactoryMethodPattern;
 
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public abstract class Creator {
     private Product product;

@@ -1,7 +1,7 @@
 package CreatationalPattern.AbstarctFactoryPattern;
 
 import CreatationalPattern.AbstarctFactoryPattern.factory.SingleTonFactory;
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public class Client2 {
     private Product productA;

@@ -1,8 +1,8 @@
 package CreatationalPattern.AbstarctFactoryPattern.factory;
 
-import product.ProductA1;
-import product.Product;
-import product.ProductB1;
+import CreatationalPattern.product.ProductA1;
+import CreatationalPattern.product.Product;
+import CreatationalPattern.product.ProductB1;
 
 public class Factory1 implements AbstractFactory {
     @Override

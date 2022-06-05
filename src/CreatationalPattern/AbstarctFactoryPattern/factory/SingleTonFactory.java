@@ -1,6 +1,6 @@
 package CreatationalPattern.AbstarctFactoryPattern.factory;
 
-import product.*;
+import CreatationalPattern.product.*;
 
 public abstract class SingleTonFactory {
 

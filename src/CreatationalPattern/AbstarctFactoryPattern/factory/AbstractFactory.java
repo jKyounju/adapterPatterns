@@ -1,6 +1,6 @@
 package CreatationalPattern.AbstarctFactoryPattern.factory;
 
-import product.Product;
+import CreatationalPattern.product.Product;
 
 public interface AbstractFactory {
 

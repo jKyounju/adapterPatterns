@@ -1,7 +1,7 @@
 package CreationalPattern;
 
 import org.junit.jupiter.api.Test;
-import product.Product;
+import CreatationalPattern.product.Product;
 
 import static CreatationalPattern.FactoryMethodPattern.StaticFM.Creator2.factoryMethod;
 import static org.junit.jupiter.api.Assertions.assertEquals;
